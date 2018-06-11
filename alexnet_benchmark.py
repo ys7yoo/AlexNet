@@ -216,6 +216,7 @@ def run_benchmark():
     # Build a Graph that computes the logits predictions from the
     # inference model.
     pool5, parameters = inference(images)
+    print(parameters)
 
     # Build an initialization operation.
     init = tf.global_variables_initializer()
